@@ -1,28 +1,31 @@
 body {
   margin: auto;
+  background-color: orange;
+
+  display: flex;
+  justify-content: center;
 }
 
-.board {
-  margin: auto;
-
-  width: 100%;
-
+section {
   display: grid;
-  grid-template-columns: repeat(8, 125px);
-  grid-template-rows: repeat(8, 125px);
+  grid-template-columns: repeat(8, 80px);
+  grid-template-rows: repeat(8, 80px);
 }
 
-.tile {
-  border: 5px solid black;
-  border: solid;
-
-  padding: auto;
+.black:nth-child(odd) {
+  background-color: white;
 }
 
-.tile:nth-child(even) {
-  background-color: blue;
+.black:nth-child(even) {
+  background-color: black;
 }
 
-.tile:nth-child(odd) {
-  background-color: green;
+.white:nth-child(even) {
+  background-color: white;
 }
+
+.white:nth-child(odd) {
+  background-color: black;
+}
+
+
