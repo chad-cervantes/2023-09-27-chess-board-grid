@@ -8,10 +8,21 @@ body {
   width: 100%;
 
   display: grid;
-  grid-template-columns: repeat(8, 100px);
-  grid-template-rows: repeat(8, 100px);
+  grid-template-columns: repeat(8, 125px);
+  grid-template-rows: repeat(8, 125px);
 }
 
 .tile {
   border: 5px solid black;
+  border: solid;
+
+  padding: auto;
+}
+
+.tile:nth-child(even) {
+  background-color: blue;
+}
+
+.tile:nth-child(odd) {
+  background-color: green;
 }
