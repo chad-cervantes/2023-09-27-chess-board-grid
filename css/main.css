@@ -1,5 +1,6 @@
 body {
-  margin: auto;
+  margin-top: 3rem;
+  padding: auto;
   background-color: orange;
 
   display: flex;
@@ -8,8 +9,15 @@ body {
 
 section {
   display: grid;
-  grid-template-columns: repeat(8, 80px);
-  grid-template-rows: repeat(8, 80px);
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+
+  margin: auto;
+
+  width: 80vh;
+  height: 80vh;
+
+  justify-content: center;
 }
 
 .black:nth-child(odd) {
