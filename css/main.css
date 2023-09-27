@@ -1,0 +1,17 @@
+body {
+  margin: auto;
+}
+
+.board {
+  margin: auto;
+
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(8, 100px);
+  grid-template-rows: repeat(8, 100px);
+}
+
+.tile {
+  border: 5px solid black;
+}
